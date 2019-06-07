@@ -33,3 +33,16 @@ index 773f7a3..c00a421 100644
      {
          $this->testResult = $result;
  
+diff --git a/src/Codeception/Test/Cept.php b/src/Codeception/Test/Cept.php
+index c82a936..dd0856e 100644
+--- a/src/Codeception/Test/Cept.php
++++ b/src/Codeception/Test/Cept.php
+@@ -50,7 +50,7 @@ public function getSignature()
+         return $this->getMetadata()->getName() . 'Cept';
+     }
+
+-    public function toString()
++    public function toString() : string
+     {
+         return $this->getSignature() . ': ' . Message::ucfirst($this->getFeature());
+     }
